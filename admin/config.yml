@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main 
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "catalog"
+    label: "Store Catalog"
+    files:
+      - label: "Products List"
+        name: "products"
+        file: "data/products.json"
+        fields:
+          - label: "Inventory"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Item ID (e.g., p1)", name: "id", widget: "string"}
+              - {label: "Item Name", name: "name", widget: "string"}
+              - {label: "Price (₹)", name: "price", widget: "number", value_type: "float"}
+              - {label: "Stock Status", name: "stock_status", widget: "select", options: ["In Stock", "Out of Stock"], default: "In Stock"}
+              - {label: "Unit Type", name: "unit", widget: "select", options: ["piece", "kg", "g", "liter", "packet"]}
+              - {label: "Image URL (or upload from Camera)", name: "img", widget: "image", required: false}
