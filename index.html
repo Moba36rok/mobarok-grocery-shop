@@ -16,7 +16,7 @@
       <p class="sub">WhatsApp & Call: <a href="tel:8918636763">8918636763</a></p>
       <div class="hero-actions">
         <button id="openCartBtn" class="btn-glass">🛒 View Cart (<span id="cartCount">0</span>)</button>
-        <button id="openLoginBtn" class="btn-glass">⚙️ Admin</button>
+        <a href="/admin/" class="btn-glass" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center;">⚙️ Admin</a>
       </div>
     </div>
   </header>
@@ -142,20 +142,6 @@
 
   <div id="toastContainer"></div>
 
-  <div id="loginModal" class="modal hidden">
-    <div class="modal-content login-box">
-      <button class="close" data-target="loginModal">&times;</button>
-      <h3>Admin Access</h3>
-      <form id="loginForm" class="card-form" style="margin: 0 auto; box-shadow:none;">
-        <label>Username</label>
-        <input id="adminUser" type="text" required />
-        <label>Password</label>
-        <input id="adminPass" type="password" required />
-        <button type="submit" class="btn-primary">Secure Login</button>
-      </form>
-    </div>
-  </div>
-
   <div id="cartModal" class="modal hidden">
     <div class="modal-content">
       <button class="close" data-target="cartModal">&times;</button>
@@ -190,54 +176,7 @@
       </form>
     </div>
   </div>
-
-  <div id="adminModal" class="modal hidden">
-    <div class="modal-content">
-      <button class="close" data-target="adminModal">&times;</button>
-      <h3>Admin Dashboard</h3>
-      
-      <div class="admin-section">
-        <h4>Manage Grocery Items</h4>
-        <form id="addItemForm" class="card-form shadow-card" style="max-width: 100%;">
-          <div class="grid">
-            <div><label>Item Name</label><input id="itemName" type="text" required /></div>
-            <div><label>Price (₹)</label><input id="itemPrice" type="number" min="0.01" step="0.01" required /></div>
-            <div>
-              <label>Unit Type</label>
-              <select id="itemUnit">
-                <option value="piece">Piece (pc)</option>
-                <option value="kg">Kilogram (kg)</option>
-                <option value="g">Gram (g)</option>
-                <option value="liter">Liter (L)</option>
-                <option value="packet">Packet (pkt)</option>
-              </select>
-            </div>
-          </div>
-          <label>Web Image URL</label>
-          <input id="itemImageUrl" type="url" placeholder="https://..." />
-          <button type="submit" class="btn-primary" style="margin-top: 10px;">Add New Item</button>
-        </form>
-        <div id="adminItems" class="grid" style="margin-top: 20px;"></div>
-      </div>
-      
-      <hr style="margin: 30px 0; border:0; border-top: 1px solid #e2e8f0;">
-      <div class="admin-section"><h4>Customer Print Documents</h4><div id="adminUploads" class="grid"></div></div>
-      <hr style="margin: 30px 0; border:0; border-top: 1px solid #e2e8f0;">
-      <div class="admin-section"><h4>Mobile Recharge Requests</h4><div id="adminRecharges" class="grid"></div></div>
-      <hr style="margin: 30px 0; border:0; border-top: 1px solid #e2e8f0;">
-      <div class="admin-section"><h4>Order History</h4><div id="ordersList" class="grid"></div></div>
-    </div>
-  </div>
-
-  <div id="invoiceModal" class="modal hidden">
-    <div class="modal-content">
-      <button class="close" data-target="invoiceModal">&times;</button>
-      <div id="invoiceContent"></div>
-      <div class="invoice-actions" style="display:flex; justify-content:flex-end; gap: 10px; margin-top:20px;">
-        <button id="closeInvoiceBtn" class="close btn-light" style="position:static;" data-target="invoiceModal">Close</button>
-        <button id="printInvoiceBtn" class="btn-primary">🖨️ Print Invoice</button>
-      </div>
-    </div>
+  
   </div>
 
 </body>
