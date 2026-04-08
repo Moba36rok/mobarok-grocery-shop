@@ -24,8 +24,17 @@
 
     <div id="productGrid" class="grid"></div>
   </main>
+  <form name="New_Orders" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="customer_name" />
+    <input type="text" name="phone" />
+    <textarea name="address"></textarea>
+    <input type="text" name="payment_method" />
+    <input type="text" name="total_amount" />
+    <textarea name="order_summary"></textarea>
+  </form>
 
   <div id="toastContainer"></div>
+
 
   <div id="cartModal" class="modal hidden">
     <div class="modal-content">
