@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grocery Store | Mobarok Online</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <a href="index.html">← Back to Services</a>
+      <span class="brand">Grocery Mart</span>
+      <button id="openCartBtn" class="btn-primary" style="width:auto;">🛒 Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </nav>
 
+  <main>
+    <section class="hero-mini">
+      <h1>Fresh Groceries</h1>
+      <p>Delivered to your doorstep in Raninagar</p>
+    </section>
+
+    <div id="productGrid" class="grid"></div>
+  </main>
+
+  <div id="cartModal" class="modal hidden">...</div>
+</body>
+</html>
