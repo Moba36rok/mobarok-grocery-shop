@@ -25,6 +25,14 @@
     <div id="productGrid" class="grid"></div>
   </main>
 
-  <div id="cartModal" class="modal hidden">...</div>
+  <div id="toastContainer"></div>
+
+  <div id="cartModal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close" data-target="cartModal">&times;</button>
+      <h3 style="color: var(--primary); margin-top: 0;">Shopping Cart</h3>
+      <div id="cartItems"></div>
+    </div>
+  </div>
 </body>
 </html>
