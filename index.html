@@ -3,144 +3,113 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mobarok Online Service & Grocery Shop</title>
+  <title>Mobarok Online | Home</title>
   <link rel="stylesheet" href="style.css" />
-  
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  
   <script src="script.js" defer></script>
 </head>
 <body>
 
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <div class="brand-logo">Mobarok <span>Online</span></div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="groceries.html">Grocery Shop</a>
+        <a href="services.html">Digital Services</a>
+        <a href="/admin/" class="btn-admin">⚙️ Admin</a>
+      </div>
+      <button id="openCartBtn" class="cart-pill">
+        🛒 <span id="cartCount">0</span>
+      </button>
+    </div>
+  </nav>
+
   <header class="hero">
     <div class="hero-content">
+      <div class="badge-new">EST. 2026</div>
       <h1>Mobarok Online Service<br>& Grocery Shop</h1>
-      <p class="sub">Lalchandabad, Babultali, Raninagar, Murshidabad, WB 742308</p>
-      <p class="sub">WhatsApp & Call: <a href="tel:8918636763">8918636763</a></p>
+      <p class="sub">Your trusted partner for Digital Banking, Printing, and Fresh Daily Essentials in Raninagar.</p>
+      
       <div class="hero-actions">
-        <button id="openCartBtn" class="btn-glass">🛒 View Cart (<span id="cartCount">0</span>)</button>
-        <a href="/admin/" class="btn-glass" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center;">⚙️ Admin</a>
+        <a href="groceries.html" class="btn-primary">Shop Groceries</a>
+        <a href="services.html" class="btn-glass">Explore Services</a>
+      </div>
+      
+      <div class="contact-strip">
+        <span>📍 Lalchandabad, Murshidabad</span>
+        <span class="separator">|</span>
+        <a href="tel:8918636763">📞 8918636763</a>
       </div>
     </div>
   </header>
 
-  <nav class="glass-nav">
-    <div class="nav-container">
-      <a href="#services">Services</a>
-      <a href="#groceries">Groceries</a>
-      <a href="#recharge">Recharge</a>
-      <a href="#print">Print</a>
-      <a href="#payment">Payment</a>
-    </div>
-  </nav>
-
   <main>
-    <section id="services" class="fade-in">
-      <h2>✨ Our Services</h2>
-      <div class="grid">
-        
-        <div class="card shadow-card service-card">
-          <img src="https://www.basunivesh.com/wp-content/uploads/2023/09/Aadhaar-Enabled-Payment-System-AEPS.jpg" alt="AEPS Service">
-          <h4>AEPS & Banking</h4>
-          <p class="small">Cash withdrawal, deposits, and money transfers.</p>
-        </div>
+    <section class="quick-access">
+      <div class="section-header">
+        <h2>How can we help you today?</h2>
+        <p>Select a category to get started</p>
+      </div>
 
-        <div class="card shadow-card service-card">
-          <img src="https://5.imimg.com/data5/SELLER/Default/2025/3/493570151/ZO/IA/JO/127226125/aadhar-card-and-voter-id-card-printer-software-500x500.png" alt="ID Cards">
-          <h4>PAN, Voter & Ration Card</h4>
-          <p class="small">New applications, corrections, and downloads.</p>
-        </div>
+      <div class="grid-layout">
+        <a href="groceries.html" class="card main-portal shadow-card">
+          <div class="portal-icon">🛒</div>
+          <h3>Fresh Grocery Store</h3>
+          <p>Order Rice, Oil, Snacks, and Household items with local delivery.</p>
+          <span class="portal-link">Browse Catalog →</span>
+        </a>
 
-        <div class="card shadow-card service-card">
-          <img src="https://i.ytimg.com/vi/j9PhFdE9lRY/maxresdefault.jpg" alt="Gov Services">
-          <h4>Panchayat & E-District</h4>
-          <p class="small">Income, domicile, and local government certificates.</p>
-        </div>
+        <a href="services.html" class="card main-portal shadow-card accent">
+          <div class="portal-icon">⚡</div>
+          <h3>Digital Services</h3>
+          <p>AEPS Banking, PAN Cards, Recharge, and Govt. Form fill-ups.</p>
+          <span class="portal-link">View All Services →</span>
+        </a>
 
-        <div class="card shadow-card service-card">
-          <img src="https://itechnowledge.com/wp-content/uploads/2019/12/Pay-electricity-bill-online.jpg" alt="Electric Bill">
-          <h4>Electric Bill Payment</h4>
-          <p class="small">Fast and secure utility bill payments.</p>
-        </div>
-
-        <div class="card shadow-card service-card">
-          <img src="https://i.pinimg.com/originals/71/22/24/7122240a565b8c62129c2fd054b30c4a.jpg" alt="Tickets">
-          <h4>Train, Bus & Flight</h4>
-          <p class="small">Instant ticket booking for all your travel needs.</p>
-        </div>
-
-        <div class="card shadow-card service-card">
-          <img src="https://behuraprint.com/wp-content/uploads/2025/01/plan-xerox.jpg" alt="Printing">
-          <h4>Print, Xerox & Lamination</h4>
-          <p class="small">High-quality document printing and protection.</p>
-        </div>
-
-        <div class="card shadow-card service-card">
-          <img src="https://cdn.prod.website-files.com/63ca8620daacd226e17eaf8f/672525f0848ff8fcaa81bfdf_020304_highlights_scholarships.jpg" alt="Form Fill-up">
-          <h4>Scholarships & Forms</h4>
-          <p class="small">Assistance with school, college, and job applications.</p>
-        </div>
-
-        <div class="card shadow-card service-card">
-          <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221223125246/LIFE-INSURANCE-2.png" alt="Insurance">
-          <h4>Insurance Services</h4>
-          <p class="small">Vehicle, health, and life insurance premiums.</p>
-        </div>
-
+        <a href="services.html#print" class="card main-portal shadow-card">
+          <div class="portal-icon">🖨️</div>
+          <h3>Print & Upload</h3>
+          <p>Upload documents securely from your phone for instant printing.</p>
+          <span class="portal-link">Upload Now →</span>
+        </a>
       </div>
     </section>
 
-    <section id="groceries" class="fade-in">
-      <h2>🛒 Fresh Groceries & Snacks</h2>
-      <p style="text-align:center; color:var(--text-muted); margin-bottom:20px;">For items sold by Kg, use decimals for grams (e.g., enter <strong>0.5</strong> for 500 grams).</p>
-      <div id="productGrid" class="grid"></div>
-    </section>
-
-    <section id="recharge" class="fade-in">
-      <h2>📱 Mobile Recharge</h2>
-      <form id="rechargeForm" name="Recharges" data-netlify="true" class="card-form shadow-card">
-        <label>Enter Mobile Number</label>
-        <input name="mobile_number" id="rechargeNumber" type="tel" placeholder="e.g., 8918636763" required />
-        <label>Amount (₹)</label>
-        <input name="recharge_amount" id="rechargeAmount" type="number" min="1" placeholder="Amount" required />
-        <button type="submit" class="btn-primary">Process Recharge</button>
-      </form>
-    </section>
-
-    <section id="print" class="fade-in">
-      <h2>🖨️ Document Print Upload</h2>
-      <p style="text-align:center; color:#64748b; margin-bottom: 20px;">Securely upload files. Only admins can view and print.</p>
-      <form id="uploadForm" name="Print_Uploads" data-netlify="true" enctype="multipart/form-data" class="card-form shadow-card">
-        <label>Select Document</label>
-        <input name="document_file" id="documentUpload" type="file" accept=".pdf,.doc,.docx,.jpg,.png,.jpeg" required/>
-        <label>Print Notes (e.g., A4, 2 copies, B&W)</label>
-        <input name="print_instructions" id="printNotes" type="text" placeholder="Enter instructions here..." />
-        <button type="submit" class="btn-primary">Upload to Server</button>
-      </form>
-    </section>
-
-    <section id="payment" class="fade-in">
-      <h2>💳 Secure Payment</h2>
-      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-        <div class="card shadow-card payment-card">
-          <div class="icon-circle">📱</div>
-          <h3>Pay via UPI App</h3>
-          <p class="small">Tap to open GPay, PhonePe, or Paytm directly.</p>
-          <a href="upi://pay?pa=8918636763@yapl&pn=Mobarok%20Online%20Service&cu=INR" class="btn-success btn-pulse">Pay Now via App</a>
-          <p class="upi-id">UPI ID: 8918636763@yapl</p>
+    <section class="features-bar">
+      <div class="feature-item">
+        <div class="f-icon">🛡️</div>
+        <div class="f-text">
+          <strong>Secure Payment</strong>
+          <p>Safe UPI & Cash Transactions</p>
         </div>
-        <div class="card shadow-card payment-card">
-          <div class="icon-circle">📷</div>
-          <h3>Scan QR Code</h3>
-          <img id="qrImage" src="images/qr.png" alt="Payment QR" class="qr modern-qr" />
-          <p class="small">Scan from any app and enter Txn ID at checkout.</p>
+      </div>
+      <div class="feature-item">
+        <div class="f-icon">🚀</div>
+        <div class="f-text">
+          <strong>Instant Service</strong>
+          <p>Fast processing for all apps</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="f-icon">🏪</div>
+        <div class="f-text">
+          <strong>Local Support</strong>
+          <p>Serving Murshidabad Daily</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Mobarok Online Service & Grocery Shop</p>
+  <footer class="modern-footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Mobarok Online Service</h3>
+        <p>Lalchandabad, Babultali, Raninagar, Murshidabad, WB 742308</p>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Mobarok Mandal. Built with Decap CMS & Netlify.
+      </div>
+    </div>
   </footer>
 
   <div id="toastContainer"></div>
@@ -148,38 +117,9 @@
   <div id="cartModal" class="modal hidden">
     <div class="modal-content">
       <button class="close" data-target="cartModal">&times;</button>
-      <h3>Your Shopping Cart</h3>
+      <h3>Shopping Cart</h3>
       <div id="cartItems"></div>
-      
-      <div class="cart-summary shadow-card">
-        <div>Subtotal: <span>₹<span id="subtotal">0.00</span></span></div>
-        <div>Tax (5%): <span>₹<span id="tax">0.00</span></span></div>
-        <div class="total">Total: <span>₹<span id="total">0.00</span></span></div>
       </div>
-
-      <div id="dynamicPaymentSection" class="shadow-card dynamic-pay-box">
-        <p>Pay exact cart total (₹<span id="payAmountTxt">0.00</span>):</p>
-        <a id="dynamicUpiLink" href="#" class="btn-success">Pay Total via App</a>
-      </div>
-
-      <h4 style="margin-top: 20px;">Checkout Details</h4>
-      <form id="checkoutForm" name="Orders" data-netlify="true" class="card-form" style="max-width: 100%; box-shadow:none;">
-        <input type="hidden" name="cart_summary" id="hiddenCartData" />
-        <input type="hidden" name="total_price" id="hiddenOrderTotal" />
-        
-        <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 10px;">
-          <div><label>Customer Name</label><input name="customer_name" id="custName" type="text" required /></div>
-          <div><label>Phone</label><input name="customer_phone" id="custPhone" type="tel" required /></div>
-        </div>
-        <label>Delivery Address</label>
-        <input name="customer_address" id="custAddress" type="text" required />
-        <label>Payment Txn ID</label>
-        <input name="payment_txn_id" id="paymentNote" type="text" placeholder="UPI Txn ID or note" />
-        <button type="submit" class="btn-primary" style="margin-top: 10px;">Place Order</button>
-      </form>
-    </div>
-  </div>
-  
   </div>
 
 </body>
