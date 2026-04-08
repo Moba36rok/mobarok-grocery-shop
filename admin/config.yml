@@ -17,9 +17,18 @@ collections:
             name: "items"
             widget: "list"
             fields:
-              - {label: "Item ID (e.g., p1)", name: "id", widget: "string"}
+              - {label: "Item ID", name: "id", widget: "string"}
               - {label: "Item Name", name: "name", widget: "string"}
               - {label: "Price (₹)", name: "price", widget: "number", value_type: "float"}
-              - {label: "Stock Status", name: "stock_status", widget: "select", options: ["In Stock", "Out of Stock"], default: "In Stock"}
+              - {label: "Stock Status", name: "stock_status", widget: "select", options: ["In Stock", "Out of Stock"]}
               - {label: "Unit Type", name: "unit", widget: "select", options: ["piece", "kg", "g", "liter", "packet"]}
-              - {label: "Image URL (or upload from Camera)", name: "img", widget: "image", required: false}
+              - {label: "Image", name: "img", widget: "image", required: false}
+
+  - name: "uploads"
+    label: "Document Inbox"
+    folder: "images/uploads"
+    create: false
+    extension: "pdf" # Filter for specific types if desired
+    fields:
+      - {label: "File", name: "file", widget: "file"}
+      - {label: "Upload Date", name: "date", widget: "datetime"}
