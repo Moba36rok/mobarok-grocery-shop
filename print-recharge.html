@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Print & Recharge | Mobarok Online</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <a href="index.html">← Home</a>
+      <span class="brand-logo" style="font-weight:bold; font-size: 1.2em;">Mobarok <span>Digital</span></span>
+    </div>
+  </nav>
 
+  <main>
+    <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+      <h1 style="color: var(--primary);">Digital Services Portal</h1>
+      <p>Fast AEPS, Recharge, and Remote Print Uploads for Murshidabad</p>
+    </div>
+
+    <div class="grid">
+      <section class="card shadow-card">
+        <h3 style="color: var(--accent);">⚡ Instant Recharge</h3>
+        <form id="rechargeForm" name="Recharges" data-netlify="true" class="card-form">
+          <input name="mobile_number" type="tel" placeholder="Enter Mobile Number" required />
+          <input name="amount" type="number" placeholder="Enter Amount (₹)" required />
+          <select name="operator" style="width: 100%; padding: 14px; margin: 10px 0 20px; background: rgba(0,0,0,0.5); color: white; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px;">
+             <option value="jio">Jio</option>
+             <option value="airtel">Airtel</option>
+             <option value="vi">Vi</option>
+             <option value="bsnl">BSNL</option>
+          </select>
+          <button type="submit" class="btn-success">Process Recharge</button>
+        </form>
+      </section>
+
+      <section class="card shadow-card">
+        <h3 style="color: var(--primary);">🖨️ Document Upload</h3>
+        <p style="font-size: 0.9em; color: var(--text-muted);">Upload your PDF/JPG here. Pick it up from the shop instantly.</p>
+        <form id="uploadForm" name="Print_Uploads" data-netlify="true" enctype="multipart/form-data" class="card-form">
+          <div style="border: 2px dashed var(--primary); padding: 30px; text-align: center; border-radius: 12px; margin: 20px 0; background: rgba(0,229,255,0.05);">
+            <input name="document" type="file" required style="border:none; box-shadow:none; padding:0; background:transparent;" />
+          </div>
+          <input name="notes" type="text" placeholder="Instructions (e.g., 2 color copies, A4)" />
+          <button type="submit" class="btn-primary">Send to Printer</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  
+  <div id="toastContainer"></div>
+</body>
+</html>
