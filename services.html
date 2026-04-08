@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Digital Services | Mobarok Online</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <a href="index.html">Home</a>
+      <a href="groceries.html">Shop Groceries</a>
+      <a href="#recharge">Mobile Recharge</a>
+      <a href="#print">Upload Document</a>
+    </div>
+  </nav>
 
+  <main>
+    <div class="grid-split">
+      <section id="recharge" class="card shadow-card">
+        <h3>📱 Quick Recharge</h3>
+        <form id="rechargeForm" name="Recharges" data-netlify="true" class="card-form">
+          <input name="mobile_number" type="tel" placeholder="Mobile Number" required />
+          <input name="amount" type="number" placeholder="Amount (₹)" required />
+          <button type="submit" class="btn-success">Recharge Now</button>
+        </form>
+      </section>
+
+      <section id="print" class="card shadow-card">
+        <h3>🖨️ Document Printing</h3>
+        <form id="uploadForm" name="Print_Uploads" data-netlify="true" enctype="multipart/form-data" class="card-form">
+          <div class="file-drop-area">
+            <input name="document" type="file" required />
+            <p>Drag or Click to upload PDF/JPG</p>
+          </div>
+          <input name="notes" type="text" placeholder="Printing Instructions (e.g. 2 copies)" />
+          <button type="submit" class="btn-primary">Upload to Admin</button>
+        </form>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
