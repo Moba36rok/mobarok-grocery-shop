@@ -18,20 +18,36 @@ document.addEventListener('DOMContentLoaded', () => {
 // --- 1. Load Products from Decap CMS JSON ---
 async function loadProducts() {
   try {
-    const res = await fetch('/data/products.json');
+    // If you are opening without a server, force the error to trigger the fallback data
+    if (window.location.protocol === 'file:') {
+      throw new Error("Cannot fetch JSON directly from file:// protocol. Using fallback data.");
+    }
+
+    const res = await fetch('./data/products.json'); // Changed to relative path
+    
+    // If the file doesn't exist yet (404 error), trigger the fallback data
+    if (!res.ok) {
+      throw new Error("products.json not found. Have you created it in the CMS yet?");
+    }
+
     const data = await res.json();
     products = data.items || [];
     renderProducts();
+    
   } catch (err) {
-    console.error("CMS Data Error:", err);
-    // Fallback Dummy Data for testing locally if JSON isn't available
+    console.warn(err.message);
+    
+    // Fallback Dummy Data so you can ALWAYS see your design
     products = [
-      { id: "1", name: "Premium Basmati Rice", price: 85, unit: "kg", stock_status: "In Stock" },
-      { id: "2", name: "Mustard Oil", price: 140, unit: "liter", stock_status: "In Stock" }
+      { id: "1", name: "Premium Basmati Rice", price: 85, unit: "kg", stock_status: "In Stock", img: "" },
+      { id: "2", name: "Mustard Oil", price: 140, unit: "liter", stock_status: "In Stock", img: "" },
+      { id: "3", name: "Aashirvaad Atta", price: 55, unit: "kg", stock_status: "In Stock", img: "" },
+      { id: "4", name: "Tata Salt", price: 25, unit: "kg", stock_status: "In Stock", img: "" }
     ];
     renderProducts();
   }
 }
+ 
 
 // --- 2. Render Products ---
 function renderProducts() {
