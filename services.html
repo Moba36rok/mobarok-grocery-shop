@@ -10,36 +10,85 @@
 <body>
   <nav class="glass-nav">
     <div class="nav-container">
-      <a href="index.html">Home</a>
-      <a href="groceries.html">Shop Groceries</a>
-      <a href="#recharge">Mobile Recharge</a>
-      <a href="#print">Upload Document</a>
+      <a href="index.html">← Home</a>
+      <span class="brand-logo" style="font-weight:bold; font-size: 1.2em;">Mobarok <span>Digital</span></span>
     </div>
   </nav>
 
   <main>
-    <div class="grid-split">
-      <section id="recharge" class="card shadow-card">
-        <h3>📱 Quick Recharge</h3>
-        <form id="rechargeForm" name="Recharges" data-netlify="true" class="card-form">
-          <input name="mobile_number" type="tel" placeholder="Mobile Number" required />
-          <input name="amount" type="number" placeholder="Amount (₹)" required />
-          <button type="submit" class="btn-success">Recharge Now</button>
-        </form>
+    <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+      <h1 style="color: var(--primary);">Our Digital Services</h1>
+      <p style="color: var(--text-muted);">Everything you need, right here in Murshidabad.</p>
+    </div>
+
+    <div class="grid" style="margin-bottom: 50px;">
+      <div class="card shadow-card" style="text-align: center;">
+        <div style="font-size: 3rem; margin-bottom: 15px; text-shadow: 0 0 15px rgba(188, 19, 254, 0.5);">🏦</div>
+        <h3 style="color: var(--accent);">AEPS Banking</h3>
+        <p style="color: var(--text-muted); font-size: 0.9em;">Aadhaar ATM, Cash Withdrawal & Balance Inquiry.</p>
+      </div>
+      
+      <div class="card shadow-card" style="text-align: center;">
+        <div style="font-size: 3rem; margin-bottom: 15px; text-shadow: 0 0 15px rgba(0, 229, 255, 0.5);">🪪</div>
+        <h3 style="color: var(--primary);">PAN Card Services</h3>
+        <p style="color: var(--text-muted); font-size: 0.9em;">New PAN applications, updates, and corrections.</p>
+      </div>
+      
+      <div class="card shadow-card" style="text-align: center;">
+        <div style="font-size: 3rem; margin-bottom: 15px; text-shadow: 0 0 15px rgba(57, 255, 20, 0.5);">📝</div>
+        <h3 style="color: var(--success);">Govt. Form Fill-up</h3>
+        <p style="color: var(--text-muted); font-size: 0.9em;">Job applications, scholarships, and official forms.</p>
+      </div>
+      
+      <div class="card shadow-card" style="text-align: center;">
+        <div style="font-size: 3rem; margin-bottom: 15px; text-shadow: 0 0 15px rgba(255, 0, 85, 0.5);">💸</div>
+        <h3 style="color: var(--danger);">Money Transfer</h3>
+        <p style="color: var(--text-muted); font-size: 0.9em;">Safe, instant domestic money transfers.</p>
+      </div>
+    </div>
+
+    <hr style="border-color: rgba(255,255,255,0.1); margin: 40px 0;">
+
+    <div class="grid">
+      
+      <section class="card shadow-card" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; border-color: var(--success);">
+        <h3 style="color: var(--success);">📲 Direct Payment</h3>
+        <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.9em;">Scan to pay instantly for any service.</p>
+        
+        <div style="background: white; padding: 15px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=8918636763@yapl&pn=Mobarok%20Online" alt="UPI QR Code" style="width: 150px; height: 150px;">
+        </div>
+        
+        <p style="font-weight: bold; color: white; letter-spacing: 1px; margin-bottom: 20px;">8918636763@yapl</p>
+        
+        <a href="upi://pay?pa=8918636763@yapl&pn=Mobarok%20Online" class="btn-success" style="text-decoration: none; text-align: center;">Open UPI App</a>
       </section>
 
       <section id="print" class="card shadow-card">
-        <h3>🖨️ Document Printing</h3>
+        <h3 style="color: var(--primary);">🖨️ Print Upload</h3>
+        <p style="font-size: 0.9em; color: var(--text-muted);">Upload PDF/JPG. Check Netlify dashboard for files.</p>
         <form id="uploadForm" name="Print_Uploads" data-netlify="true" enctype="multipart/form-data" class="card-form">
-          <div class="file-drop-area">
-            <input name="document" type="file" required />
-            <p>Drag or Click to upload PDF/JPG</p>
+          <div style="border: 2px dashed var(--primary); padding: 30px; text-align: center; border-radius: 12px; margin: 20px 0; background: rgba(0,229,255,0.05);">
+            <input name="document" type="file" required style="border:none; box-shadow:none; padding:0; background:transparent;" />
           </div>
-          <input name="notes" type="text" placeholder="Printing Instructions (e.g. 2 copies)" />
-          <button type="submit" class="btn-primary">Upload to Admin</button>
+          <input name="notes" type="text" placeholder="Instructions (e.g., 2 color copies)" />
+          <button type="submit" class="btn-primary">Send File</button>
         </form>
       </section>
+
+      <section id="recharge" class="card shadow-card">
+        <h3 style="color: var(--accent);">⚡ Mobile Recharge</h3>
+        <p style="font-size: 0.9em; color: var(--text-muted);">Send a request and pay via the QR code.</p>
+        <form id="rechargeForm" name="Recharges" data-netlify="true" class="card-form">
+          <input name="mobile_number" type="tel" placeholder="Mobile Number" required />
+          <input name="amount" type="number" placeholder="Amount (₹)" required />
+          <button type="submit" class="btn-primary" style="border-color: var(--accent); color: var(--accent);">Submit Request</button>
+        </form>
+      </section>
+
     </div>
   </main>
+
+  <div id="toastContainer"></div>
 </body>
 </html>
