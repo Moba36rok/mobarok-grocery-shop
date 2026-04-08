@@ -15,6 +15,14 @@
       "price": 1,
       "unit": "piece",
       "img": "/images/uploads/img_20260406_122756.jpg"
+    },
+    {
+      "id": "K3",
+      "name": "Bingo chips",
+      "price": 5,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "https://th.bing.com/th/id/R.5a159f63cd20193cbea3c90dfaa0bed3?rik=e9SsTNi4SQ%2fuSg&riu=http%3a%2f%2fwww.kirana.store%2fimage%2fcache%2fcatalog%2fNEW%2fY+6-500x500.png&ehk=%2f84qpSX6BQUKu%2fffzHSLgnoQ9%2btgQ6x8hvapSLmJa4U%3d&risl=&pid=ImgRaw&r=0&PC=EMMX01"
     }
   ]
 }
