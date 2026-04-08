@@ -17,18 +17,18 @@ collections:
             name: "items"
             widget: "list"
             fields:
-              - {label: "Item ID", name: "id", widget: "string"}
-              - {label: "Item Name", name: "name", widget: "string"}
-              - {label: "Price (₹)", name: "price", widget: "number", value_type: "float"}
-              - {label: "Stock Status", name: "stock_status", widget: "select", options: ["In Stock", "Out of Stock"]}
-              - {label: "Unit Type", name: "unit", widget: "select", options: ["piece", "kg", "g", "liter", "packet"]}
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Price", name: "price", widget: "number", value_type: "float"}
+              - {label: "Stock", name: "stock_status", widget: "select", options: ["In Stock", "Out of Stock"]}
+              - {label: "Unit", name: "unit", widget: "select", options: ["piece", "kg", "liter"]}
               - {label: "Image", name: "img", widget: "image", required: false}
 
+  # NEW: Document Inbox for Uploaded Files
   - name: "uploads"
     label: "Document Inbox"
     folder: "images/uploads"
     create: false
-    extension: "pdf" # Filter for specific types if desired
     fields:
-      - {label: "File", name: "file", widget: "file"}
-      - {label: "Upload Date", name: "date", widget: "datetime"}
+      - {label: "Uploaded File", name: "file", widget: "file"}
+      - {label: "Time Received", name: "date", widget: "datetime"}
