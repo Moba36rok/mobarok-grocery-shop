@@ -2,41 +2,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --primary: #4f46e5;
-  --accent: #8b5cf6;
-  --success: #10b981;
-  --danger: #ef4444;
-  --bg-color: #f8fafc;
-  --card-bg: #ffffff;
-  --text-main: #0f172a;
-  --text-muted: #64748b;
+  --primary: #00e5ff; /* Neon Cyan */
+  --accent: #bc13fe;  /* Neon Purple */
+  --success: #39ff14; /* Neon Green */
+  --danger: #ff0055;  /* Neon Red */
+  --bg-color: #090a0f; /* Deep Dark Space */
+  --card-bg: rgba(18, 20, 28, 0.7);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
   --radius: 16px;
-  --glass: rgba(255, 255, 255, 0.7);
+  --glass: rgba(9, 10, 15, 0.8);
 }
 
 * { box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-body { margin: 0; background: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+body { margin: 0; background: var(--bg-color); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+
+/* --- Neon Glowing Typography --- */
+h1, h2, h3 {
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
+
+.brand-logo span {
+  color: var(--primary);
+  text-shadow: 0 0 10px var(--primary);
+}
 
 /* --- Animated Hero Section --- */
 .hero {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.1) 0%, rgba(188, 19, 254, 0.1) 100%);
   color: white;
   padding: 80px 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
-}
-
-.hero::after {
-  content: ''; position: absolute; bottom: -50px; left: 0; right: 0;
-  height: 100px; background: var(--bg-color); transform: skewY(-2deg);
+  border-bottom: 2px solid var(--primary);
+  box-shadow: 0 10px 30px rgba(0, 229, 255, 0.1);
 }
 
 /* --- Navigation --- */
 .glass-nav {
   position: sticky; top: 0; z-index: 1000;
-  background: var(--glass); backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  background: var(--glass); backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
 .nav-container {
@@ -49,45 +57,126 @@ body { margin: 0; background: var(--bg-color); color: var(--text-main); line-hei
   font-weight: 600; padding: 8px 16px; border-radius: 50px; transition: 0.3s;
 }
 
-.nav-links a:hover { background: rgba(79, 70, 229, 0.1); color: var(--primary); }
+.nav-links a:hover, .nav-links a.active { 
+  background: rgba(0, 229, 255, 0.1); 
+  color: var(--primary); 
+  text-shadow: 0 0 8px var(--primary);
+}
 
 /* --- Grid & Cards --- */
 main { padding: 40px 20px; max-width: 1200px; margin: 0 auto; }
 
-.grid {
+.grid, .grid-layout {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
 }
 
 .card {
-  background: var(--card-bg); padding: 25px; border-radius: var(--radius);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s, box-shadow 0.3s;
-  border: 1px solid rgba(0,0,0,0.03);
+  background: var(--card-bg); 
+  padding: 25px; 
+  border-radius: var(--radius);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.4s ease;
 }
 
-.card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+.card:hover { 
+  transform: translateY(-5px); 
+  border-color: var(--primary);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.2), inset 0 0 10px rgba(0, 229, 255, 0.1); 
+}
 
-/* --- Buttons & Forms --- */
+.card.accent:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(188, 19, 254, 0.2), inset 0 0 10px rgba(188, 19, 254, 0.1);
+}
+
+/* --- Buttons & Inputs (Neon Styling) --- */
 .btn-primary {
-  background: var(--primary); color: white; border: none;
-  padding: 12px 24px; border-radius: 50px; font-weight: 700;
-  cursor: pointer; width: 100%; transition: 0.3s;
+  background: transparent; 
+  color: var(--primary); 
+  border: 2px solid var(--primary);
+  padding: 12px 24px; 
+  border-radius: 50px; 
+  font-weight: 700;
+  cursor: pointer; 
+  width: 100%; 
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
 }
 
-.btn-primary:hover { transform: scale(1.02); box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3); }
+.btn-primary:hover { 
+  background: var(--primary);
+  color: #000;
+  box-shadow: 0 0 20px var(--primary), 0 0 40px var(--primary); 
+}
+
+.btn-success {
+  background: transparent;
+  color: var(--success);
+  border: 2px solid var(--success);
+  padding: 12px 24px; border-radius: 50px; font-weight: 700; width: 100%; cursor: pointer; transition: 0.3s;
+}
+
+.btn-success:hover {
+  background: var(--success); color: #000;
+  box-shadow: 0 0 20px var(--success);
+}
 
 .card-form input {
   width: 100%; padding: 14px; margin: 10px 0 20px;
-  border: 2px solid #e2e8f0; border-radius: 12px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.1); 
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
+
+/* --- Modal & Cart --- */
+.modal {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8); backdrop-filter: blur(5px);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 9999;
+  opacity: 0; pointer-events: none; transition: 0.3s;
+}
+
+.modal.active { opacity: 1; pointer-events: auto; }
+
+.modal-content {
+  background: var(--card-bg);
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.2);
+  padding: 30px; border-radius: var(--radius);
+  width: 90%; max-width: 500px;
+  position: relative;
+}
+
+.close {
+  position: absolute; top: 15px; right: 20px;
+  background: none; border: none; color: white; font-size: 24px; cursor: pointer;
+}
+
+.cart-item {
+  display: flex; justify-content: space-between; align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1); padding: 10px 0;
 }
 
 /* --- Toast Notification --- */
 #toastContainer { position: fixed; bottom: 20px; right: 20px; z-index: 2000; }
 .toast {
-  background: white; padding: 16px 24px; border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-left: 5px solid var(--primary);
+  background: var(--card-bg); color: white; padding: 16px 24px; border-radius: 12px;
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
   margin-top: 10px; animation: slideIn 0.4s forwards;
 }
 
