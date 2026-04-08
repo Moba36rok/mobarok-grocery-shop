@@ -1,7 +1,7 @@
 /* --- Modern Variables & Global Reset --- */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
-:mobarok-grocery-shop {
+:root {
   --primary: #4f46e5;
   --accent: #8b5cf6;
   --success: #10b981;
