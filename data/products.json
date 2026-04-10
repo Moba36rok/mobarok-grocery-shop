@@ -31,6 +31,14 @@
       "stock_status": "In Stock",
       "unit": "piece",
       "img": "/images/uploads/screenshot-2026-04-04-172527.png"
+    },
+    {
+      "id": "K4",
+      "name": "TOMOTO CRAZY",
+      "price": 5,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "/images/uploads/screenshot-2026-04-04-172642.png"
     }
   ]
 }
