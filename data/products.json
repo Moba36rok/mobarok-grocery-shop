@@ -13,7 +13,7 @@
       "id": "P2",
       "name": "HAJMOLA ChatCola",
       "price": 1,
-      "unit": "piece",
+      "unit": "packet",
       "img": "/images/uploads/img_20260406_122756.jpg"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Bingo chips",
       "price": 5,
       "stock_status": "In Stock",
-      "unit": "piece",
+      "unit": "packet",
       "img": "https://th.bing.com/th/id/R.5a159f63cd20193cbea3c90dfaa0bed3?rik=e9SsTNi4SQ%2fuSg&riu=http%3a%2f%2fwww.kirana.store%2fimage%2fcache%2fcatalog%2fNEW%2fY+6-500x500.png&ehk=%2f84qpSX6BQUKu%2fffzHSLgnoQ9%2btgQ6x8hvapSLmJa4U%3d&risl=&pid=ImgRaw&r=0&PC=EMMX01"
     },
     {
@@ -29,7 +29,7 @@
       "name": "PASTA crazy cruchies",
       "price": 5,
       "stock_status": "In Stock",
-      "unit": "piece",
+      "unit": "packet",
       "img": "/images/uploads/screenshot-2026-04-04-172527.png"
     },
     {
@@ -37,7 +37,7 @@
       "name": "TOMOTO CRAZY",
       "price": 5,
       "stock_status": "In Stock",
-      "unit": "piece",
+      "unit": "packet",
       "img": "/images/uploads/screenshot-2026-04-04-172642.png"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Bingo! Tedhe Medhe Punjabi Tadka",
       "price": 5,
       "stock_status": "In Stock",
-      "unit": "piece",
+      "unit": "packet",
       "img": "https://www.bbassets.com/media/uploads/p/l/40219987-2_6-bingo-tedhe-medhe-punjabi-tadka-namkeen-mixture.jpg"
     },
     {
@@ -53,7 +53,7 @@
       "name": "Ji Nandu Ji Salted Refill Fried Snack",
       "price": 5,
       "stock_status": "In Stock",
-      "unit": "piece",
+      "unit": "packet",
       "img": "https://5.imimg.com/data5/SELLER/Default/2026/2/581261600/OE/TM/UQ/202259507/ji-nandu-ji-salted-refill-fried-snack-1000x1000.jpeg"
     },
     {
@@ -61,7 +61,7 @@
       "name": "Ji Nandu Ji Balloon Fried Snack",
       "price": 5,
       "stock_status": "In Stock",
-      "unit": "piece",
+      "unit": "packet",
       "img": "https://5.imimg.com/data5/SELLER/Default/2026/2/581261694/BN/YF/AD/202259507/ji-nandu-ji-balloon-fried-snack-1000x1000.jpeg"
     },
     {
@@ -69,7 +69,7 @@
       "name": "JI NANDU JI CRAZY PUCHKA",
       "price": 5,
       "stock_status": "In Stock",
-      "unit": "piece",
+      "unit": "packet",
       "img": "/images/uploads/screenshot_10-4-2026_145138_www.bing.com.jpeg"
     },
     {
@@ -77,7 +77,7 @@
       "name": "Bingo! Tedhe Medhe Masala Tadka",
       "price": 5,
       "stock_status": "In Stock",
-      "unit": "piece",
+      "unit": "packet",
       "img": "https://m.media-amazon.com/images/I/91akSYaADaL._SX522_.jpg"
     },
     {
@@ -85,7 +85,7 @@
       "name": "horlicks",
       "price": 5,
       "stock_status": "In Stock",
-      "unit": "piece",
+      "unit": "packet",
       "img": "https://5.imimg.com/data5/IOS/Default/2024/11/468377691/OU/RG/BH/158674818/product-jpeg-500x500.png"
     },
     {
@@ -93,7 +93,7 @@
       "name": "Amul Spray Powder",
       "price": 10,
       "stock_status": "In Stock",
-      "unit": "piece",
+      "unit": "packet",
       "img": "https://sabardairy.org/wp-content/uploads/2022/05/GC_Amulspray-Milk-Food-10-Rs-Pouch_New.jpg"
     }
   ]
