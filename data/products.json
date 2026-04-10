@@ -39,6 +39,14 @@
       "stock_status": "In Stock",
       "unit": "piece",
       "img": "/images/uploads/screenshot-2026-04-04-172642.png"
+    },
+    {
+      "id": "K5",
+      "name": "Bingo! Tedhe Medhe Punjabi Tadka",
+      "price": 5,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "https://www.bbassets.com/media/uploads/p/l/40219987-2_6-bingo-tedhe-medhe-punjabi-tadka-namkeen-mixture.jpg"
     }
   ]
 }
