@@ -87,6 +87,14 @@
       "stock_status": "In Stock",
       "unit": "piece",
       "img": "https://5.imimg.com/data5/IOS/Default/2024/11/468377691/OU/RG/BH/158674818/product-jpeg-500x500.png"
+    },
+    {
+      "id": "P2",
+      "name": "Amul Spray Powder",
+      "price": 10,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "https://sabardairy.org/wp-content/uploads/2022/05/GC_Amulspray-Milk-Food-10-Rs-Pouch_New.jpg"
     }
   ]
 }
