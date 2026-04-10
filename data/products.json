@@ -47,6 +47,46 @@
       "stock_status": "In Stock",
       "unit": "piece",
       "img": "https://www.bbassets.com/media/uploads/p/l/40219987-2_6-bingo-tedhe-medhe-punjabi-tadka-namkeen-mixture.jpg"
+    },
+    {
+      "id": "K6",
+      "name": "Ji Nandu Ji Salted Refill Fried Snack",
+      "price": 4,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "https://5.imimg.com/data5/SELLER/Default/2026/2/581261600/OE/TM/UQ/202259507/ji-nandu-ji-salted-refill-fried-snack-1000x1000.jpeg"
+    },
+    {
+      "id": "K7",
+      "name": "Ji Nandu Ji Balloon Fried Snack",
+      "price": 5,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "https://5.imimg.com/data5/SELLER/Default/2026/2/581261694/BN/YF/AD/202259507/ji-nandu-ji-balloon-fried-snack-1000x1000.jpeg"
+    },
+    {
+      "id": "K8",
+      "name": "JI NANDU JI CRAZY PUCHKA",
+      "price": 5,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "/images/uploads/screenshot_10-4-2026_145138_www.bing.com.jpeg"
+    },
+    {
+      "id": "K9",
+      "name": "Bingo! Tedhe Medhe Masala Tadka",
+      "price": 4,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "https://m.media-amazon.com/images/I/91akSYaADaL._SX522_.jpg"
+    },
+    {
+      "id": "P1",
+      "name": "horlicks",
+      "price": 5,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "https://5.imimg.com/data5/IOS/Default/2024/11/468377691/OU/RG/BH/158674818/product-jpeg-500x500.png"
     }
   ]
 }
