@@ -95,6 +95,30 @@
       "stock_status": "In Stock",
       "unit": "packet",
       "img": "https://sabardairy.org/wp-content/uploads/2022/05/GC_Amulspray-Milk-Food-10-Rs-Pouch_New.jpg"
+    },
+    {
+      "id": "C1",
+      "name": "Choco Blitz Hearts White",
+      "price": 1,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "https://oshonindia.com/wp-content/uploads/2018/11/Choco-Blitz-Hearts-White-Candy.jpg"
+    },
+    {
+      "id": "C2",
+      "name": "Oshon Pulpy Fruit Chews - Strawberry Jelly Candy ",
+      "price": 1,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "/images/uploads/1000209909.jpg"
+    },
+    {
+      "id": "C3",
+      "name": "Tumi",
+      "price": 0.5,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "https://i.ytimg.com/vi/WkgiOBli3G4/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLC4reklUpgqOInixqXPD3qcygkWfw"
     }
   ]
 }
