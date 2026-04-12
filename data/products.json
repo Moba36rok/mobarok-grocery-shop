@@ -119,6 +119,62 @@
       "stock_status": "In Stock",
       "unit": "piece",
       "img": "https://i.ytimg.com/vi/WkgiOBli3G4/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLC4reklUpgqOInixqXPD3qcygkWfw"
+    },
+    {
+      "id": "B1",
+      "name": "Bisk Farm Biscuits - Googly, 180 g Pouch",
+      "price": 30,
+      "stock_status": "In Stock",
+      "unit": "packet",
+      "img": "https://www.bbassets.com/media/uploads/p/l/40004458_7-bisk-farm-biscuits-googly.jpg"
+    },
+    {
+      "id": "B2",
+      "img": "https://www.biskfarm.com/wp-content/uploads/2024/11/Top-Gold-180g-Front-SL-1-scaled.png",
+      "name": "Top Gold",
+      "price": 30,
+      "stock_status": "In Stock",
+      "unit": "packet"
+    },
+    {
+      "id": "B3",
+      "name": "Anmol Marie Plus Biscuits",
+      "price": 29,
+      "stock_status": "In Stock",
+      "unit": "packet",
+      "img": "https://5.imimg.com/data5/VI/FK/GLADMIN-8194225/marie-plus-biscuits-1000x1000.png"
+    },
+    {
+      "id": "B4",
+      "name": "Anmol Marie Plus Biscuits",
+      "price": 10,
+      "stock_status": "In Stock",
+      "unit": "packet",
+      "img": "https://5.imimg.com/data5/SELLER/Default/2022/9/WE/OQ/MK/78819586/anmol-marie-plus-biscuits-500x500.jpg"
+    },
+    {
+      "id": "B5",
+      "name": "Googly Biskut",
+      "price": 10,
+      "stock_status": "In Stock",
+      "unit": "packet",
+      "img": "https://www.medianews4u.com/wp-content/uploads/2024/06/biscuit.png"
+    },
+    {
+      "id": "B6",
+      "name": "Butter Magic",
+      "price": 10,
+      "stock_status": "In Stock",
+      "unit": "packet",
+      "img": "https://scontent.frdp4-1.fna.fbcdn.net/v/t51.82787-15/539399386_17967845438941110_4529674519843194362_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_ohc=8dxzU9V25s0Q7kNvwH3aoN9&_nc_oc=Ado1ijgfWo-xGVbqdJmyC0dsL9zj97U7GQg-h5aZZfaBg0I_qx5ZBtwQhIXHdeNI5pM&_nc_zt=23&_nc_ht=scontent.frdp4-1.fna&_nc_gid=uo5nxep_xha0rns6CshT2A&_nc_ss=7a3a8&oh=00_Af03AqsaC8qCp1GYgU41iCeFc6Sg36WVAX-x55Fc4VbHfw&oe=69E0FFFD"
+    },
+    {
+      "id": "B7",
+      "name": "Kolkata Marie",
+      "price": 5,
+      "stock_status": "In Stock",
+      "unit": "packet",
+      "img": "https://scontent.frdp4-1.fna.fbcdn.net/v/t51.82787-15/551056027_17970460505941110_3849727191476403773_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=jxaoHV5WXXoQ7kNvwEH5NGv&_nc_oc=AdoOoEdZT8V2bmV3aNFhMY0Xh-fShCfCGXAMuUsSMmFOfjCVZnqRGDaeC2YeHNZeBjM&_nc_zt=23&_nc_ht=scontent.frdp4-1.fna&_nc_gid=eDjryb18HdlAtPXCJtts6A&_nc_ss=7a3a8&oh=00_Af0c5_L4iWkTnl8dLLnhhFHv4jX0fbpVCG00DJrFk9rqgw&oe=69E0EDE8"
     }
   ]
 }
