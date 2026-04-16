@@ -199,6 +199,62 @@
       "stock_status": "In Stock",
       "unit": "packet",
       "img": "https://lzd-img-global.slatic.net/g/p/ffb9724c0d679ecf7faec4c94a7e1760.jpg_720x720q80.jpg"
+    },
+    {
+      "id": "J1",
+      "img": "https://i.ytimg.com/vi/JPBgI126DUk/oardefault.jpg?sqp=-oaymwEkCJgDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLBqyR5Lfcpbkbad7ERF5iPuijERvw",
+      "name": "Mango Drink Fruit Hotz Popsicle ",
+      "price": 5,
+      "stock_status": "In Stock",
+      "unit": "piece"
+    },
+    {
+      "id": "J2",
+      "name": "FRUIT HOTZ Mango Juice",
+      "price": 10,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "https://5.imimg.com/data5/IT/BQ/ST/ANDROID-79294702/1582730820435-jpg-500x500.jpg"
+    },
+    {
+      "id": "J3",
+      "name": "125ml Maaza Mango Juice",
+      "price": 10,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "https://5.imimg.com/data5/SELLER/Default/2025/6/515888384/TI/CU/RW/81606370/kgfjbgmf-1000x1000.jpg"
+    },
+    {
+      "id": "J4",
+      "img": "https://5.imimg.com/data5/SELLER/Default/2025/5/513343893/NU/DL/QY/207687050/61-jgc7vlil-sl1500-500x500.png",
+      "name": "1.2Ml Maaza Mango Drink",
+      "price": 75,
+      "stock_status": "In Stock",
+      "unit": "piece"
+    },
+    {
+      "id": "J5",
+      "name": "600ml Mango Maaza Drink",
+      "price": 35,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "https://5.imimg.com/data5/SELLER/Default/2025/2/489891613/XC/KH/SH/241031540/600ml-maaza-cold-drink-500x500.jpg"
+    },
+    {
+      "id": "J6",
+      "name": "2L Mango Maaza Drink",
+      "price": 95,
+      "stock_status": "In Stock",
+      "unit": "piece",
+      "img": "https://5.imimg.com/data5/SELLER/Default/2025/11/561530166/DR/CR/XU/184862051/2-liter-maaza-mango-cold-drink-1000x1000.jpg"
+    },
+    {
+      "id": "J7",
+      "img": "https://facts.net/wp-content/uploads/2023/09/20-facts-about-sprite-1695406210.jpg",
+      "name": "2L SPRITE",
+      "price": 95,
+      "stock_status": "In Stock",
+      "unit": "piece"
     }
   ]
 }
